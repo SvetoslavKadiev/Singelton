@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingeltonBasics", "SingeltonBasiscs\SingeltonBasics.csproj", "{D04A2730-24F0-43AF-B353-34542D207330}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonInDI", "SingletonInDI\SingletonInDI.csproj", "{AC4B0595-8E4A-48C9-9968-F96A39C745BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monostate", "Monostate\Monostate.csproj", "{76A3714E-3E3A-4431-BEF2-B2CF00CC883F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D04A2730-24F0-43AF-B353-34542D207330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D04A2730-24F0-43AF-B353-34542D207330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D04A2730-24F0-43AF-B353-34542D207330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4B0595-8E4A-48C9-9968-F96A39C745BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4B0595-8E4A-48C9-9968-F96A39C745BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4B0595-8E4A-48C9-9968-F96A39C745BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4B0595-8E4A-48C9-9968-F96A39C745BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A3714E-3E3A-4431-BEF2-B2CF00CC883F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A3714E-3E3A-4431-BEF2-B2CF00CC883F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A3714E-3E3A-4431-BEF2-B2CF00CC883F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A3714E-3E3A-4431-BEF2-B2CF00CC883F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

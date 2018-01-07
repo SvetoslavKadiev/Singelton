@@ -4,3 +4,7 @@ Sofia
 1500000
 Moscow
 12500000
+Seoul
+17500000
+MexicoCity
+17400000

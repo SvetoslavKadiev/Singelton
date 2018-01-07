@@ -16,11 +16,17 @@ namespace SingeltonBasics
     {
         private Dictionary<string, int> capitals;
 
+        private static int instanceCount;
+        public static int Count => instanceCount;
+
         private SingletonDatabase()
         {
+
             WriteLine("Initializing database");
 
-            capitals = File.ReadAllLines("capitals.txt")
+            capitals = File.ReadAllLines(Path.Combine(
+                    new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName, "capitals.txt")
+                )
                 .Batch(2)
                 .ToDictionary(
                     list => list.ElementAt(0).Trim(),
@@ -29,9 +35,22 @@ namespace SingeltonBasics
 
         }
 
-        private static Lazy<SingletonDatabase> lasyInstance => new Lazy<SingletonDatabase>(()=>
-            new SingletonDatabase()
-        );
+        // laziness + thread safety
+        private static Lazy<SingletonDatabase> lasyInstance = new Lazy<SingletonDatabase>(() =>
+        {
+            instanceCount++;
+            return new SingletonDatabase();
+        });
+
+        //public static IDatabase Instance => instance.Value;
+
+
+        //private static Lazy<SingletonDatabase> lasyInstance = new Lazy<SingletonDatabase>(()=>
+        //    {
+                
+        //        return new SingletonDatabase();
+        //    }
+        //);
 
         public static SingletonDatabase Instance => lasyInstance.Value;
 
