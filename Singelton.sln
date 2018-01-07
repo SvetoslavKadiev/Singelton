@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingeltonBasiscs", "SingeltonBasiscs\SingeltonBasiscs.csproj", "{D04A2730-24F0-43AF-B353-34542D207330}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingeltonBasics", "SingeltonBasiscs\SingeltonBasics.csproj", "{D04A2730-24F0-43AF-B353-34542D207330}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
